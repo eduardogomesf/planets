@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import backgroundStars from '../assets/background-stars.svg'
+
 export const GlobalStyles = createGlobalStyle`
     * {
         padding: 0;
@@ -12,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.colors["dark-blue"]};
+        background:  ${({ theme }) => `url(${backgroundStars.src}) no-repeat , ${theme.colors["dark-blue"]}`};
         -webkit-font-smoothing: antialiased;
     }
 
