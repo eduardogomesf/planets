@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         background:  ${({ theme }) => `url(${backgroundStars.src}) no-repeat , ${theme.colors["dark-blue"]}`};
+        color: ${({ theme }) => theme.colors.white};
         -webkit-font-smoothing: antialiased;
     }
 
