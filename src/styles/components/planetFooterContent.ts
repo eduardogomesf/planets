@@ -1,7 +1,7 @@
 import { styled } from "..";
 
 export const PlanetFooterContentContainer = styled('div', {
-    marginTop: '10rem',
+    marginTop: '6rem',
     width: '100%',
 
     display: 'flex',
