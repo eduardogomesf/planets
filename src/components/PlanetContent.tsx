@@ -23,23 +23,26 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
             </ImageContainer>
 
             <PlanetDescription>
-                <h1>{planet.name}</h1>
+                <div className="content-text">
+                    <h1>{planet.name}</h1>
 
-                <p>
-                    {planet[contentType].content}
-                </p>
+                    <p>
+                        {planet[contentType].content}
+                    </p>
 
-                <Source>
-                    <span>Source :</span>
-                    <a
-                        href={planet[contentType].source}
-                        target={"_blank"}
-                        rel="noreferrer"
-                    >
-                        Wikipedia {' '}
-                        <ArrowSquareOut size={16} weight="fill" />
-                    </a>
-                </Source>
+                    <Source>
+                        <span>Source :</span>
+                        <a
+                            href={planet[contentType].source}
+                            target={"_blank"}
+                            rel="noreferrer"
+                        >
+                            Wikipedia {' '}
+                            <ArrowSquareOut size={16} weight="fill" />
+                        </a>
+                    </Source>
+
+                </div>
 
                 <ButtonsContainer>
                     <ContentButton

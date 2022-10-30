@@ -13,17 +13,24 @@ export const PlanetContainer = styled('div', {
 export const PlanetDescription = styled('div', {
     display: 'flex',
     flexDirection: 'column',
-    gap: '1.5rem',
+    gap: '2.4375rem',
 
     maxWidth: '21.875rem',
 
-    '> p': {
-        fontWeight: 400,
-        fontSize: '0.875rem',
-        lineHeight: '25px',
+    'div.content-text': {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: "1.5rem",
 
-        color: '$white',
+        '> p': {
+            fontWeight: 400,
+            fontSize: '0.875rem',
+            lineHeight: '25px',
+
+            color: '$white',
+        },
     },
+
 })
 
 export const ImageContainer = styled('div', {
@@ -78,17 +85,6 @@ export const ButtonsContainer = styled('div', {
     flexDirection: 'column',
     gap: '1rem',
 })
-
-const mapPlanetToBgColor = {
-    'Mercus': '$light-blue',
-    'Venus': '$light-orange',
-    'Earth': '$purple',
-    'Mars': '$dark-orange',
-    'Jupiter': '$light-red',
-    'Saturn': '$orange',
-    'Uranus': '$cyan',
-    'Neptune': '$blue'
-}
 
 export const ContentButton = styled('button', {
     display: 'flex',

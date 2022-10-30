@@ -2,8 +2,7 @@ import { styled } from ".."
 
 export const HeaderContainer = styled('header', {
     width: '100%',
-    height: '5.3125rem',
-    padding: '2rem',
+    padding: '1.5rem',
 
     display: 'flex',
     alignItems: 'center',
