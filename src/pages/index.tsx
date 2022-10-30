@@ -1,8 +1,9 @@
 import { GetStaticProps } from "next";
 import { useState } from "react";
-import axios from 'axios'
 
 import { Header } from "../components/Header";
+import planetsJSON from '../data/planets.json'
+
 
 export type Planet = {
   name: string;
@@ -33,7 +34,7 @@ type HomeProps = {
   planets: Planet[]
 }
 
-export default function Home ({ planets }: HomeProps) {
+export default function Home ({ planets = [] }: HomeProps) {
   const [currentPlanet, setCurrentPlanet] = useState('Mercury')
 
   return (
@@ -44,13 +45,9 @@ export default function Home ({ planets }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await axios.get('http://localhost:3000/api/planets')
-
-  const { planets = [] } = response.data
-
   return {
     props: {
-      planets,
+      planets: planetsJSON,
     },
     revalidate: 60 * 60 * 2 // 2 hours
   }
