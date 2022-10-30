@@ -43,7 +43,8 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
 
                 <ButtonsContainer>
                     <ContentButton
-                        isActive={contentType === 'overview' ? "active" : "inactive"}
+                        bgColorOnHover={planet.name as any}
+                        isActive={contentType === 'overview' ? planet.name as any : "inactive"}
                         onClick={() => onSelectContentType("overview")}
                     >
                         <span>01</span>
@@ -51,7 +52,8 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
                     </ContentButton>
 
                     <ContentButton
-                        isActive={contentType === 'structure' ? "active" : "inactive"}
+                        bgColorOnHover={planet.name as any}
+                        isActive={contentType === 'structure' ? planet.name as any : "inactive"}
                         onClick={() => onSelectContentType("structure")}
                     >
                         <span>02</span>
@@ -60,7 +62,8 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
                     </ContentButton>
 
                     <ContentButton
-                        isActive={contentType === 'geology' ? "active" : "inactive"}
+                        bgColorOnHover={planet.name as any}
+                        isActive={contentType === 'geology' ? planet.name as any : "inactive"}
                         onClick={() => onSelectContentType("geology")}
                     >
                         <span>03</span>
