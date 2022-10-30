@@ -5,10 +5,9 @@ export const Container = styled('main', {
 })
 
 export const Content = styled('div', {
-    margin: '7.875rem auto 0',
+    margin: '7.875rem auto 3.5rem',
 
     maxWidth: '69.375rem',
     width: '100%',
-
 })
 

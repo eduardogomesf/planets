@@ -17,6 +17,17 @@ export const HeaderContainer = styled('header', {
         letterSpacing: '-1.05px',
         textTransform: 'uppercase',
         fontFamily: "'Antonio', sans-serif",
+    },
+
+    media: {
+        bp1: '(min-width: 640px)',
+        bp3: '(min-width: 1024px)',
+    },
+
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        gap: '2.5rem',
     }
 })
 

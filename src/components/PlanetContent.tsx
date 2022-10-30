@@ -19,7 +19,14 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
                     height={290}
                     alt=""
                 />
-                {contentType === "geology" && <Image src={planet.images.geology} height={199} width={163} alt="" className="geology-image" />}
+                <Image
+                    src={planet.images.geology}
+                    height={199}
+                    width={163}
+                    alt=""
+                    className="geology-image"
+                    style={{ visibility: contentType === "geology" ? 'visible' : 'hidden' }}
+                />
             </ImageContainer>
 
             <PlanetDescription>

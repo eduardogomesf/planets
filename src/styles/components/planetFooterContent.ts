@@ -6,12 +6,17 @@ export const PlanetFooterContentContainer = styled('div', {
 
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    gap: '2rem',
+
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        padding: '0 2rem',
+        gap: '0.75rem'
+    }
 
 })
 
 export const PlanetFooterContentCard = styled('div', {
-    maxWidth: '15.9375rem',
     width: '100%',
     height: '8rem',
     padding: '1.25rem',

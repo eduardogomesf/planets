@@ -8,14 +8,18 @@ export const PlanetContainer = styled('div', {
     display: 'flex',
     alignItems: 'center',
     gap: '18.75rem',
+
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        gap: '8.125rem',
+    }
 })
 
 export const PlanetDescription = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: '2.4375rem',
-
-    maxWidth: '21.875rem',
 
     'div.content-text': {
         display: 'flex',
@@ -31,19 +35,29 @@ export const PlanetDescription = styled('div', {
         },
     },
 
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        padding: '0 2rem',
+
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        justifyContent: 'space-between',
+        gap: '4.3125rem'
+    }
+
 })
 
 export const ImageContainer = styled('div', {
-    width: '18.125rem',
-    height: "18.125rem",
-
     position: 'relative',
 
+    display: 'flex',
+    align: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+
     '.geology-image': {
-        position: 'absolute',
-        left: 64,
-        top: 226
-    }
+        display: 'block',
+        margin: '-15% auto',
+    },
 })
 
 export const Source = styled('div', {
@@ -84,6 +98,11 @@ export const ButtonsContainer = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
+
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        maxWidth: '17.5625rem',
+        width: '100%'
+    }
 })
 
 export const ContentButton = styled('button', {
