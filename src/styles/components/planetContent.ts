@@ -26,6 +26,19 @@ export const PlanetDescription = styled('div', {
     },
 })
 
+export const ImageContainer = styled('div', {
+    width: '18.125rem',
+    height: "18.125rem",
+
+    position: 'relative',
+
+    '.geology-image': {
+        position: 'absolute',
+        left: 64,
+        top: 226
+    }
+})
+
 export const Source = styled('div', {
     display: 'flex',
     alignItems: 'center',

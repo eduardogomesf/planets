@@ -1,7 +1,7 @@
 import { ArrowSquareOut } from "phosphor-react";
 import Image from "next/image";
 import { ContentType, Planet } from "../pages";
-import { PlanetContainer, PlanetDescription, Source, ButtonsContainer, ContentButton } from "../styles/components/planetContent";
+import { PlanetContainer, PlanetDescription, Source, ButtonsContainer, ContentButton, ImageContainer } from "../styles/components/planetContent";
 
 type PlanetContentProps = {
     contentType: ContentType
@@ -12,12 +12,15 @@ type PlanetContentProps = {
 export function PlanetContent ({ contentType, onSelectContentType, planet }: PlanetContentProps) {
     return (
         <PlanetContainer>
-            <Image
-                src={contentType === "structure" ? planet.images.internal : planet.images.planet}
-                width={290}
-                height={290}
-                alt=""
-            />
+            <ImageContainer>
+                <Image
+                    src={contentType === "structure" ? planet.images.internal : planet.images.planet}
+                    width={290}
+                    height={290}
+                    alt=""
+                />
+                {contentType === "geology" && <Image src={planet.images.geology} height={199} width={163} alt="" className="geology-image" />}
+            </ImageContainer>
 
             <PlanetDescription>
                 <h1>{planet.name}</h1>
