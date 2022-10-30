@@ -21,14 +21,14 @@ export const HeaderContainer = styled.header`
     }
 `
 
-export const HeaderNav = styled.ul`
+export const HeaderNav = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
 
     list-style: none;
 
-     > li {
+     > button {
         font-family: 'League Spartan', sans-serif;
         font-weight: 700;
         font-size: 0.6875rem;
@@ -37,6 +37,8 @@ export const HeaderNav = styled.ul`
         text-transform: uppercase;
 
         color: ${({ theme }) => theme.colors.white};
+        border: none;
+        background: transparent;
 
         opacity: 0.75;
 
