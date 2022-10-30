@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Header } from "../components/Header";
 import { PlanetContent } from "../components/PlanetContent";
+import { PlanetFooterContent } from "../components/PlanetFooterContent";
 import planetsJSON from '../data/planets.json'
 import { Container, Content } from "../styles/pages/home";
 
@@ -62,6 +63,7 @@ export default function Home ({ planets = [] }: HomeProps) {
             onSelectContentType={handleSelectContentType}
           />
 
+          <PlanetFooterContent planet={planet} />
         </Content>
       </Container>
     </>
