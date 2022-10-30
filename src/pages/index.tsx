@@ -37,9 +37,13 @@ type HomeProps = {
 export default function Home ({ planets = [] }: HomeProps) {
   const [currentPlanet, setCurrentPlanet] = useState('Mercury')
 
+  function handleSelectPlanet (chosenPlanet: string) {
+    setCurrentPlanet(chosenPlanet)
+  }
+
   return (
     <>
-      <Header planets={planets} onSelectPlanet={setCurrentPlanet} />
+      <Header planets={planets} onSelectPlanet={handleSelectPlanet} />
     </>
   )
 }
