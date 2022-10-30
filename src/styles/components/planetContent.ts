@@ -56,7 +56,7 @@ export const ImageContainer = styled('div', {
 
     '.geology-image': {
         display: 'block',
-        margin: '-15% auto',
+        margin: '-30% auto',
     },
 })
 
