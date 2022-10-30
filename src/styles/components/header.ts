@@ -1,52 +1,52 @@
-import styled from "styled-components";
+import { styled } from ".."
 
-export const HeaderContainer = styled.header`
-    width: 100%;
-    height: 5.3125rem;
-    padding: 2rem;
+export const HeaderContainer = styled('header', {
+    width: '100%',
+    height: '5.3125rem',
+    padding: '2rem',
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    
-    > strong {
-        font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 36px;
-        letter-spacing: -1.05px;
-        text-transform: uppercase;
-        font-family: 'Antonio', sans-serif;
+    borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+
+    '> strong': {
+        fontWeight: 400,
+        fontSize: '1.75rem',
+        lineHeight: '36px',
+        letterSpacing: '-1.05px',
+        textTransform: 'uppercase',
+        fontFamily: "'Antonio', sans-serif",
     }
-`
+})
 
-export const HeaderNav = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+export const HeaderNav = styled('div', {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2rem',
 
-    list-style: none;
+    listStyle: 'none',
 
-     > button {
-        font-family: 'League Spartan', sans-serif;
-        font-weight: 700;
-        font-size: 0.6875rem;
-        line-height: 25px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+    '> button': {
+        fontFamily: "'League Spartan', sans serif",
+        fontWeight: 700,
+        fontSize: '0.6875rem',
+        lineHeight: '25px',
+        letterSpacing: '1px',
+        textTransform: 'uppercase',
 
-        color: ${({ theme }) => theme.colors.white};
-        border: none;
-        background: transparent;
+        color: '$white',
+        border: 'none',
+        background: 'transparent',
 
-        opacity: 0.75;
+        opacity: 0.75,
 
-        cursor: pointer;
+        cursor: 'pointer',
 
-        &:hover {
-            opacity: 1;
-            transition: opacity 0.2s;
+        '&:hover': {
+            opacity: 1,
+            transition: 'opacity 0.2s',
         }
     }
-`
+})
