@@ -36,7 +36,7 @@ type HomeProps = {
   planets: Planet[]
 }
 
-export type ContentType = 'overview' | 'internal_structure' | 'surface_geology'
+export type ContentType = 'overview' | 'structure' | 'geology'
 
 export default function Home ({ planets = [] }: HomeProps) {
   const [currentPlanetName, setCurrentPlanetName] = useState('Mercury')

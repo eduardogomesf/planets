@@ -12,18 +12,27 @@ type PlanetContentProps = {
 export function PlanetContent ({ contentType, onSelectContentType, planet }: PlanetContentProps) {
     return (
         <PlanetContainer>
-            <Image src={planet.images.planet} width={290} height={290} alt="" />
+            <Image
+                src={contentType === "structure" ? planet.images.internal : planet.images.planet}
+                width={290}
+                height={290}
+                alt=""
+            />
 
             <PlanetDescription>
-                <h1>MERCURY</h1>
+                <h1>{planet.name}</h1>
 
                 <p>
-                    Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Suns planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.
+                    {planet[contentType].content}
                 </p>
 
                 <Source>
                     <span>Source :</span>
-                    <a href="">
+                    <a
+                        href={planet[contentType].source}
+                        target={"_blank"}
+                        rel="noreferrer"
+                    >
                         Wikipedia {' '}
                         <ArrowSquareOut size={16} weight="fill" />
                     </a>
@@ -39,8 +48,8 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
                     </ContentButton>
 
                     <ContentButton
-                        isActive={contentType === 'internal_structure' ? "active" : "inactive"}
-                        onClick={() => onSelectContentType("internal_structure")}
+                        isActive={contentType === 'structure' ? "active" : "inactive"}
+                        onClick={() => onSelectContentType("structure")}
                     >
                         <span>02</span>
                         INTERNAL
@@ -48,8 +57,8 @@ export function PlanetContent ({ contentType, onSelectContentType, planet }: Pla
                     </ContentButton>
 
                     <ContentButton
-                        isActive={contentType === 'surface_geology' ? "active" : "inactive"}
-                        onClick={() => onSelectContentType("surface_geology")}
+                        isActive={contentType === 'geology' ? "active" : "inactive"}
+                        onClick={() => onSelectContentType("geology")}
                     >
                         <span>03</span>
                         SURFACE
