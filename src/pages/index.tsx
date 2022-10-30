@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Header } from "../components/Header";
 import { PlanetContent } from "../components/PlanetContent";
@@ -44,8 +44,19 @@ export default function Home ({ planets = [] }: HomeProps) {
   const [planet, setPlanet] = useState<Planet>(planets[0])
   const [contentType, setContentType] = useState<ContentType>('overview')
 
+  useEffect(() => {
+    const initialPlanet = planets.find(planet => planet.name === currentPlanetName)
+    setPlanet(initialPlanet!)
+  }, [planets])
+
   function handleSelectPlanet (chosenPlanet: string) {
     setCurrentPlanetName(chosenPlanet)
+
+    const planetByName = planets.find(planet => planet.name === chosenPlanet)
+
+    if (planetByName) {
+      setPlanet(planetByName)
+    }
   }
 
   function handleSelectContentType (contentType: ContentType) {
