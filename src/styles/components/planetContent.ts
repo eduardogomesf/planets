@@ -40,7 +40,17 @@ export const PlanetDescription = styled('div', {
         flexDirection: 'row',
         alignItems: 'flex-end',
         justifyContent: 'space-between',
-        gap: '4.3125rem'
+        gap: '4.3125rem',
+
+        'div.content-text': {
+            '> h1': {
+                fontSize: '3rem',
+            },
+
+            '> p': {
+                fontSize: '0.6875rem'
+            }
+        }
     }
 
 })
@@ -90,6 +100,16 @@ export const Source = styled('div', {
             transition: 'opacity 0.2s',
         }
     },
+
+    '@media (min-width: 640px) and (max-width: 1080px)': {
+        span: {
+            fontSize: '0.75rem',
+        },
+
+        a: {
+            fontSize: '0.75rem',
+        }
+    }
 
 })
 
@@ -208,9 +228,11 @@ export const ContentButton = styled('button', {
     },
 
     '@media (min-width: 640px) and (max-width: 1080px)': {
+        fontSize: '0.5625rem',
+
         span: {
             marginRight: '1rem',
-        }
+        },
     }
 
 })
