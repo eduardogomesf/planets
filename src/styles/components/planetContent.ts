@@ -25,6 +25,7 @@ export const PlanetDescription = styled('div', {
         display: 'flex',
         flexDirection: 'column',
         gap: "1.5rem",
+        maxWidth: "21.1875rem",
 
         '> p': {
             fontWeight: 400,
@@ -111,6 +112,7 @@ export const ContentButton = styled('button', {
     justifyContent: 'flex-start',
 
     height: '3rem',
+    padding: '0 1.75rem',
 
     '&:hover': {
         transition: 'background 0.2s',
@@ -203,8 +205,14 @@ export const ContentButton = styled('button', {
     cursor: 'pointer',
 
     span: {
-        margin: '0 28px',
+        marginRight: '1.75rem',
         opacity: 0.5
     },
+
+    '@media (min-width: 640px) and (max-width: 1024px)': {
+        span: {
+            marginRight: '1rem',
+        }
+    }
 
 })
