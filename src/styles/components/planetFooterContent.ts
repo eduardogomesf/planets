@@ -46,6 +46,16 @@ export const PlanetFooterContentCard = styled('div', {
         textTransform: 'uppercase',
 
         color: '$white'
+    },
+
+    '@media (min-width: 640px) and (max-width: 1080px)': {
+        span: {
+            fontSize: '0.5rem'
+        },
+
+        strong: {
+            fontSize: '1.5rem'
+        }
     }
 
 })
