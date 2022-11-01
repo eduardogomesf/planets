@@ -49,6 +49,10 @@ export default function Home ({ planets = [] }: HomeProps) {
     setPlanet(initialPlanet!)
   }, [planets])
 
+  useEffect(() => {
+    setContentType('overview')
+  }, [planet])
+
   function handleSelectPlanet (chosenPlanet: string) {
     setCurrentPlanetName(chosenPlanet)
 
