@@ -19,7 +19,7 @@ export const HeaderContainer = styled('header', {
         fontFamily: "'Antonio', sans-serif",
     },
 
-    '@media (min-width: 640px) and (max-width: 1080px)': {
+    '@media (min-width: 768px) and (max-width: 1080px)': {
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '2.5rem',
