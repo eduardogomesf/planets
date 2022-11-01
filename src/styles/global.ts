@@ -13,12 +13,6 @@ export const GlobalStyles = globalCss({
         outline: 0,
     },
 
-    '@media (min-width: 640px) and (max-width: 1024px)': {
-        html: {
-            fontSize: '87.5%'
-        }
-    },
-
     body: {
         background: `url(${backgroundStars.src}) no-repeat , $dark-blue`,
         color: '$white',

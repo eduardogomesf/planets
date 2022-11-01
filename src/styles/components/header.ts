@@ -21,10 +21,10 @@ export const HeaderContainer = styled('header', {
 
     media: {
         bp1: '(min-width: 640px)',
-        bp3: '(min-width: 1024px)',
+        bp3: '(min-width: 1080px)',
     },
 
-    '@media (min-width: 640px) and (max-width: 1024px)': {
+    '@media (min-width: 640px) and (max-width: 1080px)': {
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '2.5rem',
