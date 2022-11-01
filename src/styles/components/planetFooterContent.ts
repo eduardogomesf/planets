@@ -4,11 +4,11 @@ export const PlanetFooterContentContainer = styled('div', {
     marginTop: '6rem',
     width: '100%',
     padding: '0 2rem',
-    gap: '2rem',
 
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    gap: '2rem',
 
     '@media (min-width: 768px) and (max-width: 1080px)': {
         gap: '0.75rem'

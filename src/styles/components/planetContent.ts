@@ -56,8 +56,6 @@ export const PlanetDescription = styled('div', {
 })
 
 export const ImageContainer = styled('div', {
-    position: 'relative',
-
     display: 'flex',
     align: 'center',
     justifyContent: 'center',
