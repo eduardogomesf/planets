@@ -12,8 +12,18 @@ export const PlanetFooterContentContainer = styled('div', {
 
     '@media (min-width: 768px) and (max-width: 1080px)': {
         gap: '0.75rem'
-    }
+    },
 
+    '@media (max-width: 768px)': {
+        margin: '2.25rem auto 0',
+        maxWidth: "21.1875rem",
+        padding: '0',
+
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '0.5rem',
+    },
 })
 
 export const PlanetFooterContentCard = styled('div', {
@@ -50,12 +60,30 @@ export const PlanetFooterContentCard = styled('div', {
 
     '@media (min-width: 768px) and (max-width: 1080px)': {
         span: {
-            fontSize: '0.5rem'
+            fontSize: '0.75rem'
         },
 
         strong: {
             fontSize: '1.5rem'
         }
-    }
+    },
+
+    '@media (max-width: 768px)': {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flex: 0,
+
+        // height: '4rem',
+        padding: '0.75rem 3rem',
+
+        span: {
+            fontSize: '0.75rem'
+        },
+
+        strong: {
+            fontSize: '1.25rem'
+        }
+    },
 
 })
