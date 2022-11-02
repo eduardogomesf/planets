@@ -1,5 +1,6 @@
+import { List } from "phosphor-react";
 import { Planet } from "../pages";
-import { HeaderContainer, HeaderNav } from "../styles/components/header";
+import { BurgerButton, HeaderContainer, HeaderNav } from "../styles/components/header";
 
 type HeaderProps = {
     planets: Planet[]
@@ -21,6 +22,10 @@ export function Header ({ planets, onSelectPlanet }: HeaderProps) {
                     </button>
                 ))}
             </HeaderNav>
+
+            <BurgerButton>
+                <List size={24} />
+            </BurgerButton>
         </HeaderContainer>
     )
 }

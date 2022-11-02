@@ -53,5 +53,24 @@ export const HeaderNav = styled('div', {
             opacity: 1,
             transition: 'opacity 0.2s',
         }
-    }
+    },
+
+    '@media (max-width: 768px)': {
+        display: 'none'
+    },
+})
+
+export const BurgerButton = styled('button', {
+    border: 'none',
+    background: 'transparent',
+
+    color: '$white',
+
+    cursor: 'pointer',
+
+    display: 'none',
+
+    '@media (max-width: 768px)': {
+        display: 'initial'
+    },
 })
