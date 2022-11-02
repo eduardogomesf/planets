@@ -74,7 +74,6 @@ export const PlanetFooterContentCard = styled('div', {
         alignItems: 'center',
         flex: 0,
 
-        // height: '4rem',
         padding: '0.75rem 3rem',
 
         span: {

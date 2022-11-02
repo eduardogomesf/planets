@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 import { PlanetContent } from "../components/PlanetContent";
 import { PlanetFooterContent } from "../components/PlanetFooterContent";
 import planetsJSON from '../data/planets.json'
-import { Container, Content } from "../styles/pages/home";
+import { Container, Content, ContentTypeButton, ContentTypeContainer } from "../styles/pages/home";
 
 
 export type Planet = {
@@ -70,6 +70,31 @@ export default function Home ({ planets = [] }: HomeProps) {
   return (
     <>
       <Header planets={planets} onSelectPlanet={handleSelectPlanet} />
+
+      <ContentTypeContainer>
+        <ContentTypeButton
+          isActive={contentType === 'overview' ? 'active' : 'unactive'}
+          borderBottomColorOnActive={contentType === 'overview' ? planet.name as any : 'unactive'}
+          onClick={() => setContentType('overview')}
+        >
+          OVERVIEW
+        </ContentTypeButton>
+        <ContentTypeButton
+          isActive={contentType === 'structure' ? 'active' : 'unactive'}
+          borderBottomColorOnActive={contentType === 'structure' ? planet.name as any : 'unactive'}
+          onClick={() => setContentType('structure')}
+        >
+          STRUCTURE
+        </ContentTypeButton>
+        <ContentTypeButton
+          isActive={contentType === 'geology' ? 'active' : 'unactive'}
+          borderBottomColorOnActive={contentType === 'geology' ? planet.name as any : 'unactive'}
+          onClick={() => setContentType('geology')}
+        >
+          SURFACE
+        </ContentTypeButton>
+      </ContentTypeContainer>
+
       <Container>
         <Content>
           <PlanetContent
