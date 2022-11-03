@@ -192,7 +192,46 @@ export const ContentButton = styled('button', {
             inactive: {
                 backgroundColor: 'transparent',
             },
-
+            'Mercury': {
+                '&:hover': {
+                    backgroundColor: '$light-blue',
+                }
+            },
+            'Venus': {
+                '&:hover': {
+                    backgroundColor: '$light-orange',
+                }
+            },
+            'Earth': {
+                '&:hover': {
+                    backgroundColor: '$purple',
+                }
+            },
+            'Mars': {
+                '&:hover': {
+                    backgroundColor: '$dark-orange',
+                }
+            },
+            'Jupiter': {
+                '&:hover': {
+                    backgroundColor: '$light-red',
+                }
+            },
+            'Saturn': {
+                '&:hover': {
+                    backgroundColor: '$orange',
+                }
+            },
+            'Uranus': {
+                '&:hover': {
+                    backgroundColor: '$cyan',
+                }
+            },
+            'Neptune': {
+                '&:hover': {
+                    backgroundColor: '$blue',
+                }
+            }
         },
         bgColorOnHover: {
             'Mercury': {

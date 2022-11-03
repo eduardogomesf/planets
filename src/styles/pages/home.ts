@@ -54,31 +54,31 @@ export const ContentTypeButton = styled('button', {
 
         borderBottomColorOnActive: {
             'unactive': {
-                backgroundColor: 'transparent'
+                borderBottomColor: 'transparent'
             },
             'Mercury': {
-                backgroundColor: '$light-blue',
+                borderBottomColor: '$light-blue',
             },
             'Venus': {
-                backgroundColor: '$light-orange',
+                borderBottomColor: '$light-orange',
             },
             'Earth': {
-                backgroundColor: '$purple',
+                borderBottomColor: '$purple',
             },
             'Mars': {
-                backgroundColor: '$dark-orange',
+                borderBottomColor: '$dark-orange',
             },
             'Jupiter': {
-                backgroundColor: '$light-red',
+                borderBottomColor: '$light-red',
             },
             'Saturn': {
-                backgroundColor: '$orange',
+                borderBottomColor: '$orange',
             },
             'Uranus': {
-                backgroundColor: '$cyan',
+                borderBottomColor: '$cyan',
             },
             'Neptune': {
-                backgroundColor: '$blue',
+                borderBottomColor: '$blue',
             }
         }
     },
