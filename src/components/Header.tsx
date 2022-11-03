@@ -1,6 +1,7 @@
-import { List } from "phosphor-react";
+import { useState } from "react";
 import { Planet } from "../pages";
-import { BurgerButton, HeaderContainer, HeaderNav } from "../styles/components/header";
+import { HeaderContainer, HeaderNav } from "../styles/components/header";
+import { MenuButton } from "./MenuButton";
 
 type HeaderProps = {
     planets: Planet[]
@@ -8,6 +9,8 @@ type HeaderProps = {
 }
 
 export function Header ({ planets, onSelectPlanet }: HeaderProps) {
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <HeaderContainer>
             <strong>THE PLANETS</strong>
@@ -23,9 +26,7 @@ export function Header ({ planets, onSelectPlanet }: HeaderProps) {
                 ))}
             </HeaderNav>
 
-            <BurgerButton>
-                <List size={24} />
-            </BurgerButton>
+            <MenuButton isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
         </HeaderContainer>
     )
 }

@@ -59,18 +59,3 @@ export const HeaderNav = styled('div', {
         display: 'none'
     },
 })
-
-export const BurgerButton = styled('button', {
-    border: 'none',
-    background: 'transparent',
-
-    color: '$white',
-
-    cursor: 'pointer',
-
-    display: 'none',
-
-    '@media (max-width: 768px)': {
-        display: 'initial'
-    },
-})
