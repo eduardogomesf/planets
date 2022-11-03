@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Planet } from "../pages";
 import { HeaderContainer, HeaderNav } from "../styles/components/header";
-import { MenuButton } from "./MenuButton";
+import { Burger } from "./Burger";
 
 type HeaderProps = {
     planets: Planet[]
@@ -26,7 +26,7 @@ export function Header ({ planets, onSelectPlanet }: HeaderProps) {
                 ))}
             </HeaderNav>
 
-            <MenuButton isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
+            <Burger isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
         </HeaderContainer>
     )
 }

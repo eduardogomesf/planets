@@ -1,6 +1,6 @@
 import { styled } from "..";
 
-export const MenuButtonContainer = styled('button', {
+export const BurgerContainer = styled('button', {
     width: '2rem',
     height: '2rem',
 
