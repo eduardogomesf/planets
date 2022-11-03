@@ -9,6 +9,10 @@ export const Content = styled('main', {
 
     maxWidth: '69.375rem',
     width: '100%',
+
+    '@media (max-width: 768px)': {
+        marginTop: '6rem',
+    }
 })
 
 export const ContentTypeContainer = styled('div', {

@@ -61,6 +61,7 @@ export const PlanetDescription = styled('div', {
     },
 
     '@media (max-width: 768px)': {
+        marginTop: '2rem',
 
         'div.content-text': {
             padding: '0',
@@ -95,7 +96,13 @@ export const ImageContainer = styled('div', {
         '> img': {
             width: 154,
             height: 154,
-        }
+        },
+
+        '.geology-image': {
+            width: 130,
+            height: 130,
+            marginTop: '-15%'
+        },
     },
 })
 
