@@ -23,6 +23,10 @@ export const HeaderContainer = styled('header', {
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '2.5rem',
+    },
+
+    '@media (max-width: 768px)': {
+        paddingRight: '0.5rem'
     }
 })
 
