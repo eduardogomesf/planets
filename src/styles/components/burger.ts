@@ -1,17 +1,13 @@
 import { styled } from "..";
 
 export const BurgerContainer = styled('button', {
-    width: '2rem',
+    width: '4rem',
     height: '2rem',
 
     background: 'none',
     border: 'none',
 
     display: 'none',
-
-    position: 'fixed',
-    top: '1.5rem',
-    right: '1.5rem',
 
     cursor: 'pointer',
 
@@ -70,5 +66,6 @@ export const BurgerContainer = styled('button', {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-around',
+        overflow: 'hidden'
     }
 })
