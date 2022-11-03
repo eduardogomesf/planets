@@ -49,7 +49,7 @@ export default function Home ({ planets = [] }: HomeProps) {
   useEffect(() => {
     const initialPlanet = planets.find(planet => planet.name === currentPlanetName)
     setPlanet(initialPlanet!)
-  }, [planets])
+  }, [currentPlanetName, planets])
 
   useEffect(() => {
     setContentType('overview')
