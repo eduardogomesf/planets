@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Planet } from "../pages";
 import { HeaderContainer, HeaderNav } from "../styles/components/header";
 import { Burger } from "./Burger";
@@ -6,11 +5,11 @@ import { Burger } from "./Burger";
 type HeaderProps = {
     planets: Planet[]
     onSelectPlanet: (planetName: string) => void
+    isOpen: boolean
+    toggleMenu: () => void
 }
 
-export function Header ({ planets, onSelectPlanet }: HeaderProps) {
-    const [isOpen, setIsOpen] = useState(false)
-
+export function Header ({ planets, onSelectPlanet, isOpen, toggleMenu }: HeaderProps) {
     return (
         <HeaderContainer>
             <strong>THE PLANETS</strong>
@@ -26,7 +25,7 @@ export function Header ({ planets, onSelectPlanet }: HeaderProps) {
                 ))}
             </HeaderNav>
 
-            <Burger isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
+            <Burger isOpen={isOpen} toggleMenu={() => toggleMenu()} />
         </HeaderContainer>
     )
 }
