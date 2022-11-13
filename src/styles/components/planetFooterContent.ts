@@ -33,13 +33,17 @@ export const PlanetFooterContentCard = styled('div', {
 
     border: '1px solid rgba(255, 255, 255, 0.2)',
 
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+
     span: {
         display: 'block',
 
         fontFamily: '"League Spartan", sans-serif',
-        textTransform: "uppercase",
         fontWeight: 700,
         fontSize: "0.6875rem",
+        textTransform: "uppercase",
         lineHeight: '25px',
         letterSpacing: '1px',
 
@@ -59,16 +63,22 @@ export const PlanetFooterContentCard = styled('div', {
     },
 
     '@media (min-width: 768px) and (max-width: 1080px)': {
+        height: '5.5rem',
+        padding: '1rem',
+
         span: {
-            fontSize: '0.75rem'
+            fontSize: '0.5rem'
         },
 
         strong: {
-            fontSize: '1.5rem'
+            fontSize: '1.5rem',
+            lineHeight: '31px',
         }
     },
 
     '@media (max-width: 767px)': {
+        height: '3rem',
+
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
