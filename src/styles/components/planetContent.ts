@@ -16,7 +16,7 @@ export const PlanetContainer = styled('div', {
     },
 
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         flexDirection: 'column',
         justifyContent: 'center',
         gap: '3rem',
@@ -60,7 +60,7 @@ export const PlanetDescription = styled('div', {
         }
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         marginTop: '2rem',
 
         'div.content-text': {
@@ -92,7 +92,7 @@ export const ImageContainer = styled('div', {
     },
 
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         '> img': {
             width: 154,
             height: 154,
@@ -148,7 +148,7 @@ export const Source = styled('div', {
         }
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         span: {
             fontSize: '0.75rem',
         },
@@ -170,7 +170,7 @@ export const ButtonsContainer = styled('div', {
         width: '100%'
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         display: 'none'
     },
 })

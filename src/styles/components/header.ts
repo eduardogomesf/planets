@@ -25,7 +25,7 @@ export const HeaderContainer = styled('header', {
         gap: '2.5rem',
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         paddingRight: '0.5rem'
     }
 })
@@ -59,7 +59,7 @@ export const HeaderNav = styled('div', {
         }
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         display: 'none'
     },
 })

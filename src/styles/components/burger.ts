@@ -61,7 +61,7 @@ export const BurgerContainer = styled('button', {
         },
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

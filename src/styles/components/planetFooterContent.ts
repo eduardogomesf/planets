@@ -14,7 +14,7 @@ export const PlanetFooterContentContainer = styled('div', {
         gap: '0.75rem'
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         margin: '2.25rem auto 0',
         maxWidth: "21.1875rem",
         padding: '0',
@@ -68,7 +68,7 @@ export const PlanetFooterContentCard = styled('div', {
         }
     },
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',

@@ -10,7 +10,7 @@ export const Content = styled('main', {
     maxWidth: '69.375rem',
     width: '100%',
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         marginTop: '6rem',
     }
 })
@@ -21,7 +21,7 @@ export const ContentTypeContainer = styled('div', {
 
     display: 'none',
 
-    '@media (max-width: 768px)': {
+    '@media (max-width: 767px)': {
         display: 'flex',
         alignItems: 'center',
         justifyContent: "space-between",
@@ -82,8 +82,6 @@ export const ContentTypeButton = styled('button', {
             }
         }
     },
-
-
 
     '&:hover': {
         opacity: 1,
